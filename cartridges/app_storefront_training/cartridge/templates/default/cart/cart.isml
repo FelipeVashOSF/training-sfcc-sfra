@@ -68,7 +68,10 @@
                 </div>
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
-                    <isinclude template="cart/cartPromoCode" />
+                    <a class="clickCode" href="javascript:void(0)"><p>Click here!</p></a>
+                    <div class="hidden-promo">
+                        <isinclude template="cart/cartPromoCode" />
+                    </div>
                     <div class="coupons-and-promos">
                         <isinclude template="cart/cartCouponDisplay" />
                     </div>

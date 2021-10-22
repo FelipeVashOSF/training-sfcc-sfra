@@ -1,0 +1,10 @@
+#maincontent {
+    padding-top: 120px;
+}
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+}

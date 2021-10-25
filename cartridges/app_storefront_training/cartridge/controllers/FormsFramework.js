@@ -7,17 +7,12 @@ var userLoggedIn = require('*/cartridge/scripts/middleware/userLoggedIn');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 server.get(
-    'Form',
+    "Form",
     server.middleware.https,
-    userLoggedIn.validateLoggedIn,
-    consentTracking.consent,
     function (req, res, next) {
-        var Resource = require('dw/web/Resource');
-        var URLUtils = require('dw/web/URLUtils');
-        var reportingUrlsHelper = require('*/cartridge/scripts/reportingUrls');
-        var reportingURLs;
-
-        res.render('forms_framework/forms_framework', {reportingURLs: reportingURLs});
+        res.render('forms_framework/forms_framework');
         next();
     }
 );
+
+module.exports = server.exports();

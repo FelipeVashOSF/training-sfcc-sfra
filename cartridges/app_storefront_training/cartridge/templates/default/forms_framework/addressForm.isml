@@ -1,0 +1,135 @@
+<form
+    action="${URLUtils.url('Address-SaveAddress', 'addressId', pdict.addressId)}"
+    class="address-form"
+    method="POST"
+    <isprint value="${pdict.addressForm.attributes}" encoding="off" />>
+
+    <!-- Name -->
+    <div class="row">
+        <!-- First Name -->
+        <div class="col-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="firstName">
+                    <isprint value="${Resource.msg('formsframework.shipping.name.firstname','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="firstName"
+                    <isprint value="${pdict.addressForm.firstName.attributes}" encoding="off" />
+                    autocomplete="given-name">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="col-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="lastName">
+                    <isprint value="${Resource.msg('formsframework.shipping.name.lastname','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="lastName" autocomplete="family-name" />
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Address 1 -->
+    <div class="form-group required">
+        <label class="form-control-label" for="address1">
+            <isprint value="${Resource.msg('formsframework.shipping.address1','forms_framework',null)}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="address1"
+            <isprint value="${pdict.addressForm.address1.attributes}" encoding="off" />
+            autocomplete="address-line1">
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <!-- Address 2 -->
+    <div class="form-group required">
+        <label class="form-control-label" for="address2">
+            <isprint value="${Resource.msg('formsframework.shipping.address2','forms_framework',null)}" encoding="htmlcontent" />
+        </label>
+        <input type="text" class="form-control" id="address2"
+            <isprint value="${pdict.addressForm.address2.attributes}" encoding="off" />
+            autocomplete="billing address-line2">
+        <div class="invalid-feedback"></div>
+    </div>
+
+    <!-- Country and State drop downs -->
+    <div class="row">
+        <!-- Country  -->
+        <div class="col-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="country">
+                    <isprint value="${Resource.msg('formsframework.shipping.country','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="country"
+                    <isprint value="${pdict.addressForm.country.attributes}" encoding="off" />
+                    autocomplete="country">
+                    <isloop items=${pdict.addressForm.country.options} var="country">
+                        <option id="${country.id}" value="${country.htmlValue}" <isif condition="${country.selected}">selected</isif>>${country.label}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <!-- State  -->
+        <div class="col-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="state">
+                    <isprint value="${Resource.msg('formsframework.shipping.state','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control" id="state"
+                    <isprint value="${pdict.addressForm.states.stateCode.attributes}" encoding="off" />
+                    autocomplete="address-level1">
+                    <isloop items=${pdict.addressForm.states.stateCode.options} var="state">
+                        <option id="${state.id}" value="${state.htmlValue}" <isif condition="${state.selected}">selected</isif>>${state.label || ' '}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phone and ZIP -->
+    <div class="row">
+        <div class="col-6">
+        <!-- Phone  -->
+            <div class="form-group required">
+               <label class="form-control-label" for="phone">
+                    <isprint value="${Resource.msg('formsframework.shipping.phonenumber','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="city"
+                    <isprint value="${pdict.addressForm.city.attributes}" encoding="off" />
+                    autocomplete="address-level2">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+
+        <!-- ZIP Code -->
+        <div class="col-6">
+            <div class="form-group required">
+                <label class="form-control-label" for="zipCode">
+                    <isprint value="${Resource.msg('formsframework.shipping.postalcode','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <input type="text" class="form-control" id="zipCode"
+                    <isprint value="${pdict.addressForm.postalCode.attributes}" encoding="off" />
+                    autocomplete="postal-code">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comments -->
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group required">
+                <label class="form-control-label" for="comments">
+                    <isprint value="${Resource.msg('formsframework.shipping.comments','forms_framework',null)}" encoding="htmlcontent" />
+                </label>
+                <textarea type="text" class="form-control" id="comments" rows="4" cols="50" maxlength="150">
+                </textarea>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+</form>

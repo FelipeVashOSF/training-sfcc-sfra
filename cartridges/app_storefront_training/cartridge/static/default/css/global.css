@@ -18175,6 +18175,8 @@ div.availability {
 .framework-title {
   text-align: center;
   background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=global.css.map*/

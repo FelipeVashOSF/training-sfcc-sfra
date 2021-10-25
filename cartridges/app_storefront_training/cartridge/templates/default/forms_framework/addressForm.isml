@@ -36,9 +36,7 @@
         <label class="form-control-label" for="address1">
             <isprint value="${Resource.msg('formsframework.shipping.address1','forms_framework',null)}" encoding="htmlcontent" />
         </label>
-        <input type="text" class="form-control" id="address1"
-            <isprint value="${pdict.addressForm.address1.attributes}" encoding="off" />
-            autocomplete="address-line1">
+        <input type="text" class="form-control" id="address1" />
         <div class="invalid-feedback"></div>
     </div>
 
@@ -47,9 +45,7 @@
         <label class="form-control-label" for="address2">
             <isprint value="${Resource.msg('formsframework.shipping.address2','forms_framework',null)}" encoding="htmlcontent" />
         </label>
-        <input type="text" class="form-control" id="address2"
-            <isprint value="${pdict.addressForm.address2.attributes}" encoding="off" />
-            autocomplete="billing address-line2">
+        <input type="text" class="form-control" id="address2" />
         <div class="invalid-feedback"></div>
     </div>
 
@@ -61,9 +57,7 @@
                 <label class="form-control-label" for="country">
                     <isprint value="${Resource.msg('formsframework.shipping.country','forms_framework',null)}" encoding="htmlcontent" />
                 </label>
-                <select class="form-control" id="country"
-                    <isprint value="${pdict.addressForm.country.attributes}" encoding="off" />
-                    autocomplete="country">
+                <select class="form-control" id="country">
                     <isloop items=${pdict.addressForm.country.options} var="country">
                         <option id="${country.id}" value="${country.htmlValue}" <isif condition="${country.selected}">selected</isif>>${country.label}</option>
                     </isloop>

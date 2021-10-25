@@ -1,3 +1,4 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');

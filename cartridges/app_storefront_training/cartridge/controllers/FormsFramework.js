@@ -15,7 +15,7 @@ server.get(
 
         res.setViewData({ reportingURLs: reportingURLs });
 
-        res.render('forms_framework/forms_freamwork');
+        res.render('forms_framework/forms_framework');
         next();
     }
 );

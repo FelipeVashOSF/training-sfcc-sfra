@@ -11,11 +11,19 @@ server.get(
     server.middleware.https,
     function (req, res, next) {
         var addressForm = server.forms.getForm('address');
-        var shippingForm = server.forms.getForm('shipping')
         addressForm.clear();
+        var creditCardForm = server.forms.getForm('creditCard');
+        creditCardForm.clear();
+        var currentYear = new Date().getFullYear();
+        var creditCardExpirationYears = [];
+
+        for (var j = 0; j < 10; j++) {
+            creditCardExpirationYears.push(currentYear + j);
+        }
         res.render('forms_framework/forms_framework', {
             addressForm: addressForm,
-            shippingForm: shippingForm
+            creditCardForm: creditCardForm,
+            expirationYears: creditCardExpirationYears
         });
         next();
     }

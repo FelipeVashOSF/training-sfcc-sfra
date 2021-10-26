@@ -23,8 +23,15 @@
     <div class="col-6">
         <div class="form-group required">
             <label class="form-control-label" for="expirationMonth">${Resource.msg('formsframework.payment.creditcard.expirationmonth','forms_framework',null)}</label>
-            <select class="form-control expirationMonth custom-select" id="expirationMonth">
-                <option id="month" value="month"></option>
+            <select class="form-control expirationMonth custom-select" id="expirationMonth"
+                <isprint value="${pdict.creditcardForm.expirationMonth.attributes}" encoding="off"/> 
+                autocomplete="cc-exp-month"
+                aria-describedby="expirationMonthInvalidMessage">
+                <isloop items=${pdict.creditCardForm.expirationMonth.options} var="month">
+                    <option id="${month.id}" value="${month.htmlValue}">
+                        ${month.label}
+                    </option>
+                </isloop>
             </select>
             <div class="invalid-feedback" id="expirationMonthInvalidMessage"></div>
         </div>
@@ -34,6 +41,15 @@
             <label class="form-control-label" for="expirationYear">${Resource.msg('formsframework.payment.creditcard.expirationyear','forms_framework',null)}</label>
             <select class="form-control expirationYear custom-select" id="expirationYear">
                 <option></option>
+                <isloop items=${pdict.expirationYears} var="year">
+                    <option id="${year.toFixed(0)}" value="${year.toFixed(0)}"
+                        <isif condition="${pdict.order.billing.payment.selectedPaymentInstruments
+                            && pdict.order.billing.payment.selectedPaymentInstruments.length > 0
+                            && year == pdict.order.billing.payment.selectedPaymentInstruments[0].expirationYear}">
+                                selected
+                        </isif> >
+                    <isprint value="${year}" formatter="####" /></option>
+                </isloop>
             </select>
             <div class="invalid-feedback" id="expirationYearInvalidMessage"></div>
         </div>
@@ -74,6 +90,7 @@
         </div>
     </div>
 </div>
+
 <!-- Cancel and Save Buttons -->
 <div class="row">
     <div class="col-12">

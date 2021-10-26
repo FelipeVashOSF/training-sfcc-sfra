@@ -10,7 +10,13 @@ server.get(
     "Form",
     server.middleware.https,
     function (req, res, next) {
-        res.render('forms_framework/forms_framework');
+        var addressForm = server.forms.getForm('address');
+        var shippingForm = server.forms.getForm('shipping')
+        addressForm.clear();
+        res.render('forms_framework/forms_framework', {
+            addressForm: addressForm,
+            shippingForm: shippingForm
+        });
         next();
     }
 );

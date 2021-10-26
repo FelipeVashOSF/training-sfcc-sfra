@@ -57,7 +57,9 @@
                 </label>
                 <select class="form-control" id="country" >
                     <option></option>
-                    <option>${Resource.msg('formsframework.shipping.country.option','forms_framework',null)}</option>
+                    <isloop items=${pdict.addressForm.country.options} var="country">
+                        <option id="${country.id}" value="${country.htmlValue}" <isif condition="${country.selected}">selected</isif>>${country.label}</option>
+                    </isloop>
                 </select>
                 <div class="invalid-feedback"></div>
             </div>
@@ -70,8 +72,9 @@
                     <isprint value="${Resource.msg('formsframework.shipping.state','forms_framework',null)}" encoding="htmlcontent" />
                 </label>
                 <select class="form-control" id="state">
-                    <option></option>
-                    <option>${Resource.msg('formsframework.shipping.state.option','forms_framework',null)}</option>
+                    <isloop items=${pdict.addressForm.states.stateCode.options} var="state">
+                        <option id="${state.id}" value="${state.htmlValue}" <isif condition="${state.selected}">selected</isif>>${state.label || ' '}</option>
+                    </isloop>
                 </select>
                 <div class="invalid-feedback"></div>
             </div>
@@ -97,7 +100,8 @@
                <label class="form-control-label" for="phone">
                     <isprint value="${Resource.msg('formsframework.shipping.phonenumber','forms_framework',null)}" encoding="htmlcontent" />
                 </label>
-                <input type="text" class="form-control" id="phone" encoding="off"/>
+                <input type="text" class="form-control" id="phone" encoding="off"
+                    <isprint value="${pdict.addressForm.addressId.attributes}" encoding="off" />>
                 <p>${Resource.msg('formsframework.shipping.phonenumber.example','forms_framework',null)}</p>
                 <div class="invalid-feedback"></div>
             </div>
@@ -111,9 +115,12 @@
                 <label class="form-control-label" for="comments">
                     <isprint value="${Resource.msg('formsframework.shipping.comments','forms_framework',null)}" encoding="htmlcontent" />
                 </label>
-                <textarea type="text" class="form-control" id="comments" rows="4" cols="50" maxlength="150" encoding="off">
-                </textarea>
-                <p>${Resource.msg('formsframework.shipping.comments.example','forms_framework',null)}</p>
+                <textarea type="text" class="form-control js-comment-textarea" id="comment" <isprint value="${pdict.addressForm.comment.attributes}" encoding="off" />></textarea>
+                <span class="js-comment-span">
+                    ${Resource.msg('formsframework.shipping.comments.span1','forms_framework',null)}
+                    <span class="js-comment-value"></span>
+                    ${Resource.msg('formsframework.shipping.comments.span2','forms_framework',null)}
+                </span>
                 <div class="invalid-feedback"></div>
             </div>
         </div>

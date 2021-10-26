@@ -40,6 +40,9 @@
            range-error="error.message.between10and20"
            parse-error="error.message.parse.phone"/>
 
+       <field formid="comment" label="label.input.comment" type="string" mandatory="true" binding="comment" min-length="2"
+           max-length="150" />
+
     <!-- actions provided by the edit shipping address dialog -->
     <action formid="apply" valid-form="true"/>
     <action formid="remove" valid-form="false"/>

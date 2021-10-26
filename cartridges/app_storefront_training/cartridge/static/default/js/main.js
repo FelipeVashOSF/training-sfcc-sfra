@@ -86,6 +86,31 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./cartridges/app_storefront_training/cartridge/client/default/js/forms_framework.js":
+/*!*******************************************************************************************!*\
+  !*** ./cartridges/app_storefront_training/cartridge/client/default/js/forms_framework.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var processInclude = __webpack_require__(/*! ./util */ "./cartridges/app_storefront_training/cartridge/client/default/js/util.js");
+
+var textArea = $('.js-comment-textarea');
+var maxLength = textArea.attr('maxlength');
+
+function checkMaxLength() {
+  var value = maxLength - textArea.val().length;
+  $('.js-comment-value').text(value);
+}
+
+textArea.on('keyup', checkMaxLength);
+checkMaxLength();
+
+/***/ }),
+
 /***/ "./cartridges/app_storefront_training/cartridge/client/default/js/main.js":
 /*!********************************************************************************!*\
   !*** ./cartridges/app_storefront_training/cartridge/client/default/js/main.js ***!
@@ -96,6 +121,10 @@
 window.jQuery = window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 var processInclude = __webpack_require__(/*! ./util */ "./cartridges/app_storefront_training/cartridge/client/default/js/util.js");
+
+$(document).ready(function () {
+  processInclude(__webpack_require__(/*! ./forms_framework */ "./cartridges/app_storefront_training/cartridge/client/default/js/forms_framework.js"));
+});
 
 /***/ }),
 

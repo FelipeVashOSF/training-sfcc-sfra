@@ -251,6 +251,7 @@
 
 .slick-slide img {
   margin: auto;
+  border-radius: 15px;
 }
 
 .slick-dots li button:before {

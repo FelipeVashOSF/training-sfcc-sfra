@@ -1,0 +1,32 @@
+@import "../thirdyParty/slick-1.8.1/slick/slick";
+@import "../thirdyParty/slick-1.8.1/slick/slick-theme";
+
+.slick {
+    padding: 10px;
+}
+.slick-slide img {
+    margin: auto;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+}
+
+.slick-slider {
+    .slick-prev, .slick-next {
+        z-index: 9;
+        &:before {
+            padding: 5px;
+            color: black;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
+    .slick-prev { 
+        left: 10px;
+    }
+    .slick-next {
+        right: 30px;
+    }
+}

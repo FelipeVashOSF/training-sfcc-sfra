@@ -1,0 +1,53 @@
+<isscript>
+    assets.addCss('/css/carousels/carousels.css');
+    assets.addJs('/js/carousels/carousels.js');
+</isscript>
+<div class="col-12 slick">
+    
+    <div class="col-12">
+        <div class="js-first-carousel">
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+            <div>
+                <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div>
+            <div class="js-second-carousel">
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+                <div>
+                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

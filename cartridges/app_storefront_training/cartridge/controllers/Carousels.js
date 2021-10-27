@@ -6,7 +6,9 @@ var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
 var userLoggedIn = require('*/cartridge/scripts/middleware/userLoggedIn');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
-server.get('Show', function(res,req,next) {
+server.get('Show',
+    server.middleware.https,
+    function(req, res, next) {
     res.render('carousels/carousels');
     next();
 })

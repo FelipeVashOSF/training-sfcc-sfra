@@ -125,7 +125,7 @@ $(document).ready(function () {
     dots: true,
     centerMode: true,
     centerPadding: '0px',
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     infinite: true,
     autoplay: true,

@@ -1,0 +1,10 @@
+<isscript>
+    assets.addCss('/css/products/products.css');
+    assets.addJs('/js/products/products.js');
+</isscript>
+
+<isloop items="${slotcontent.content}" var="product" status="loopState">
+    <div class="item">
+        <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.ID, 'pview', 'tile', 'ratings', true, 'swatches', true)}"/>
+    </div>
+</isloop>

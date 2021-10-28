@@ -4,6 +4,7 @@
 .slick {
     padding: 10px;
 }
+
 .slick-slide img {
     margin: auto;
     border-radius: 15px;
@@ -13,6 +14,12 @@
     font-size: 40px;
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
 .slick-slider {
     .slick-prev, .slick-next {
         z-index: 9;

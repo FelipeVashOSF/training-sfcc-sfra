@@ -2,12 +2,13 @@
     assets.addCss('/css/products/products.css');
     assets.addJs('/js/products/products.js');
 </isscript>
+<isinclude template="/components/modules" sf-toolkit="off" />
 <div class="col-12 slick">
     <div class="col-12">
         <div>
             <div class="js-second-carousel">
                 <div>
-                    <img src="https://picsum.photos/300" alt="Lorem Picsum"/>
+                    <isslot id="home-products" description="Product Slot" context="global" />
                 </div>
                 <div>
                     <img src="https://picsum.photos/300" alt="Lorem Picsum"/>

@@ -6,7 +6,8 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '0px',
         infinite: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        asNavFor: '.js-second-carousel'
     });
     $('.js-second-carousel').slick({
         arrows: true,
@@ -16,7 +17,6 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         infinite: true,
-        autoplay: true,
         responsive: [
             {
               breakpoint: 1280,

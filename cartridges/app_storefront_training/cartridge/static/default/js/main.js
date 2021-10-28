@@ -86,10 +86,27 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./cartridges/app_storefront_training/cartridge/client/default/js/carousels/carousels.js":
-/*!***********************************************************************************************!*\
-  !*** ./cartridges/app_storefront_training/cartridge/client/default/js/carousels/carousels.js ***!
-  \***********************************************************************************************/
+/***/ "./cartridges/app_storefront_training/cartridge/client/default/js/main.js":
+/*!********************************************************************************!*\
+  !*** ./cartridges/app_storefront_training/cartridge/client/default/js/main.js ***!
+  \********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+window.jQuery = window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+var processInclude = __webpack_require__(/*! ./util */ "./cartridges/app_storefront_training/cartridge/client/default/js/util.js");
+
+$(document).ready(function () {
+  processInclude(__webpack_require__(/*! ./products/products */ "./cartridges/app_storefront_training/cartridge/client/default/js/products/products.js"));
+});
+
+/***/ }),
+
+/***/ "./cartridges/app_storefront_training/cartridge/client/default/js/products/products.js":
+/*!*********************************************************************************************!*\
+  !*** ./cartridges/app_storefront_training/cartridge/client/default/js/products/products.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -129,23 +146,6 @@ $(document).ready(function () {
     }]
   });
   $('.item').css("display", "flex");
-});
-
-/***/ }),
-
-/***/ "./cartridges/app_storefront_training/cartridge/client/default/js/main.js":
-/*!********************************************************************************!*\
-  !*** ./cartridges/app_storefront_training/cartridge/client/default/js/main.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-window.jQuery = window.$ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-var processInclude = __webpack_require__(/*! ./util */ "./cartridges/app_storefront_training/cartridge/client/default/js/util.js");
-
-$(document).ready(function () {
-  processInclude(__webpack_require__(/*! ./carousels/carousels */ "./cartridges/app_storefront_training/cartridge/client/default/js/carousels/carousels.js"));
 });
 
 /***/ }),

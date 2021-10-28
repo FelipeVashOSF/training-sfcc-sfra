@@ -1,3 +1,0 @@
-<isdecorate template="common/layout/page">
-    <isinclude template="carousels/carousels-content" sf-toolkit="on" />
-</isdecorate>

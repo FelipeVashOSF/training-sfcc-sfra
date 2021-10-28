@@ -9,7 +9,7 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 server.get('Show',
     server.middleware.https,
     function(req, res, next) {
-    res.render('carousels/carousels');
+    res.render('products/products');
     next();
 })
 

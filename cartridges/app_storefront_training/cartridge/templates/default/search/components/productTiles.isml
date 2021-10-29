@@ -1,0 +1,11 @@
+<isloop items="${pdict.productSearch.productIds}" var="product">
+    <div class="col-6 col-sm-4">
+        <isset name="category" value="${dw.catalog.CatalogMgr.getCategory(pdict.productSearch.category.id)}" scope="page"/>
+        <isif condition="${category.custom.badgeText != null}">
+            <isinclude template="product/categoryBadge" sf-toolkit="on" />
+        </isif>
+        <isobject object="${product.productSearchHit}" view="searchhit">
+            <isinclude url="${URLUtils.url('Tile-Show', 'pid', product.productID, 'swatches', true, 'ratings', true)}" />
+        </isobject>
+    </div>
+</isloop>

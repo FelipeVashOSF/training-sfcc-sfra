@@ -1,0 +1,19 @@
+.category-badge {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  font-size: 12px;
+  height: 80px;
+  justify-content: center;
+  left: -5px;
+  line-height: 14px;
+  line-break: auto;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: -20px;
+  width: 80px;
+  z-index: 100;
+}
+
+/*# sourceMappingURL=categoryBadge.css.map*/

@@ -18200,8 +18200,107 @@ div.availability {
   padding: 10px 0px 10px 0px;
 }
 
+.footer-customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a1e0;
+  padding: 20px;
+}
+
+.footer-title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.first-option {
+  list-style: inside;
+}
+.first-option a {
+  color: white;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a1e0;
+  padding: 20px;
+}
+
+.footer-about-title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.about-option-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-option-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-option {
+  margin-right: 10px;
+}
+.about-option a {
+  color: white;
+}
+
+.footer-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #00a1e0;
+  padding: 20px;
+}
+
+.footer-account-title {
+  text-align: center;
+  font-weight: bolder;
+}
+
+.account-option-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-option-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-option {
+  margin-right: 10px;
+}
+.account-option a {
+  color: white;
+}
+
 footer {
   padding: 0;
+}
+
+.copyright-wrapper {
+  background-color: #00a1e0;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright-notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=global.css.map*/

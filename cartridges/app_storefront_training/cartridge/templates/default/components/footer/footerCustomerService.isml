@@ -1,0 +1,22 @@
+<isscript>
+    assets.addCss('/css/components/footer/footer-customer-service.css');
+</isscript>
+<div class="col-12 footer-customer">
+    <div clas="row">
+        <h1 class="footer-title">${Resource.msg('footer-customer-service.title','footer-customer-service',null)}</h1>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h3> ${Resource.msg('footer-customer-service.subtitle1','footer-customer-service',null)} </h3>
+            <p>${Resource.msg('footer-customer-service.subtitle1.text1','footer-customer-service',null)}</p>
+        </div>
+        <div class="col-6">
+            <h3>${Resource.msg('footer-customer-service.subtitle2','footer-customer-service',null)}</h3>
+            <ul>
+                <li class="first-option">
+                   <a href="">${Resource.msg('footer-customer-service.subtitle2.firstoption','footer-customer-service',null)}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

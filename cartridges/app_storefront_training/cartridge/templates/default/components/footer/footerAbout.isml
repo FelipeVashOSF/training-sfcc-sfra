@@ -1,0 +1,24 @@
+<isscript>
+    assets.addCss('/css/components/footer/footer-about.css');
+</isscript>
+<div class="col-12 footer-about">
+    <div clas="row">
+        <h1 class="footer-about-title">${Resource.msg('footer-about.title','footer-about',null)}</h1>
+    </div>
+    <div class="about-option-wrapper">
+        <ul class="about-option-list">
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-about.firstoption','footer-about',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-about.secondoption','footer-about',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-about.thirdoption','footer-about',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-about.fourthoption','footer-about',null)}</a>
+            </li>
+        </ul>
+    </div>
+</div>

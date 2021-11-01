@@ -7,24 +7,20 @@
             <iscontentasset aid="footer-payment" />
         </div>
         <div class="footer-item row-sm-3 collapsible-xs">
-            <iscontentasset aid="footer-support" />
+            <iscontentasset aid="footer-customer-service" />
         </div>
         <div class="footer-item row-sm-3 collapsible-xs">
-            <iscontentasset aid="footer-about" />
+            <iscontentasset aid="footer-training-about" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-training-account" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-more-info" />
         </div>
     </div>
-    <hr class="hidden-xs-down" />
-    <div class="row">
-        <div class="col-lg-4 col-sm-5 push-sm-7 push-lg-8 social">
-            <isslot id="footer-column-m" description="Content in column 1 of the Footer" context="global" />
-            <button class="back-to-top" title="${Resource.msg('button.back_to_top', 'common', null)}" aria-label="${Resource.msg('button.back_to_top', 'common', null)}">
-                <span class="fa-stack fa-lg" aria-hidden="true">
-                    <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
-                    <i class="fa fa-arrow-up fa-stack-1x"></i>
-                </span>
-            </button>
-        </div>
-        <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice">
+    <div class="row copyright-wrapper">
+        <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice" style="background-color: #00a1e0">
             <iscontentasset aid="footer-copy" />
         </div>
     </div>

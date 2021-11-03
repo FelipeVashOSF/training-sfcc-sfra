@@ -16,20 +16,26 @@
     height: 0;
 }
 
-figure {
+.options-wrapper figure {
+    position: relative;
+}
+
+.option {
     cursor: pointer;
     padding: 10px;
-    figcaption {
-        color: black;
-        font-weight: bolder;
-        padding: 10px;
-        z-index: 1000;
-    }
     :hover {
         filter: opacity(75%);
     }
 }
-
+.option-text {
+    position: absolute;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
 .grayscale {
     filter: grayscale(1);
     transition: 3ms;

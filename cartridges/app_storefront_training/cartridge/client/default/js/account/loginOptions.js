@@ -1,10 +1,9 @@
 'use strict';
 
-var button1 = $(".button1");
-var button2 = $(".button2");
-var option = $(".option");
-var returningCustomerImage = $(".returning-customer");
-var checkOrderImage = $(".check-order");
+var button1 = $(".js-button1");
+var button2 = $(".js-button2");
+var returningCustomerImage = $(".js-returning-customer");
+var checkOrderImage = $(".js-check-order");
 var loginOption = $(".js-login-option");
 var orderOption = $(".js-order-option");
 

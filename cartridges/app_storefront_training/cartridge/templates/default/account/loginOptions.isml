@@ -1,10 +1,10 @@
 <div class="options-wrapper">
-    <input class="button1" type="radio" name="login-options" id="returning-customer" checked="checked" />
-    <label class="option" for="returning-customer">
+    <input class="button1 js-button1" type="radio" name="login-options" id="returning-customer" checked="checked" />
+    <label for="returning-customer">
         <isslot id="returning-customer" context="global" description="Slot for returning customer image" context-object="" preview-url="" />
     </label>
-    <input class="button2" type="radio" name="login-options" id="check-order" />
-    <label class="option" for="check-order">
+    <input class="button2 js-button2" type="radio" name="login-options" id="check-order" />
+    <label for="check-order">
         <isslot id="check-order" context="global" description="Slot for check order image" context-object="" preview-url="" />
     </label>
 </div>

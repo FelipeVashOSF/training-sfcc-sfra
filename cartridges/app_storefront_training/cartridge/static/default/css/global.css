@@ -18190,18 +18190,26 @@ div.availability {
   height: 0;
 }
 
-figure {
+.options-wrapper figure {
+  position: relative;
+}
+
+.option {
   cursor: pointer;
   padding: 10px;
 }
-figure figcaption {
-  color: black;
+.option :hover {
+  filter: opacity(75%);
+}
+
+.option-text {
+  position: absolute;
+  color: white;
   font-weight: bolder;
   padding: 10px;
+  bottom: 10px;
+  left: 10px;
   z-index: 1000;
-}
-figure :hover {
-  filter: opacity(75%);
 }
 
 .grayscale {

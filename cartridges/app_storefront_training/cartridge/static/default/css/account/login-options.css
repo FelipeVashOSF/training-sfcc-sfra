@@ -1,0 +1,43 @@
+.options-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.button1 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.button2 {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+figure {
+  cursor: pointer;
+  padding: 10px;
+}
+figure figcaption {
+  color: black;
+  font-weight: bolder;
+  padding: 10px;
+  z-index: 1000;
+}
+figure :hover {
+  filter: opacity(75%);
+}
+
+.grayscale {
+  filter: grayscale(1);
+  transition: 3ms;
+}
+
+.hide {
+  display: none;
+  transition: 3ms;
+}
+
+/*# sourceMappingURL=login-options.css.map*/

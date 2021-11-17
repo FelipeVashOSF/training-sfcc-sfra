@@ -8,6 +8,7 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 1
     });
+
     $('.js-second-carousel').slick({
         arrows: true,
         dots: true,
@@ -36,5 +37,6 @@ $(document).ready(function(){
             }
           ]
     });
+    
     $('.item').css("display", "flex");
 });

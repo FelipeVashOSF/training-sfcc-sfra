@@ -1,0 +1,29 @@
+<isscript>
+    assets.addCss('/css/template/template.css');
+</isscript>
+<div class="col-12">
+    <h2 class="template-title">${Resource.msg('template.title','template',null)}</h2>
+</div>
+<div class="col-12">
+    <h3 class="template-subtitle">${Resource.msg('template.subtitle','template',null)}</h3>
+</div>
+<div class="col-12">
+    <div class="row">
+        <div class="col-3">
+            <h4 class="text-title">${Resource.msg('template.text.title','template',null)}</h4>
+            <p class="text-content">${Resource.msg('template.text.content','template',null)}</p>
+        </div>
+        <div class="col-3">
+            <h4 class="text-title">${Resource.msg('template.text.title','template',null)}</h4>
+            <p class="text-content">${Resource.msg('template.text.content','template',null)}</p>
+        </div>
+        <div class="col-3">
+            <h4 class="text-title">${Resource.msg('template.text.title','template',null)}</h4>
+            <p class="text-content">${Resource.msg('template.text.content','template',null)}</p>
+        </div>
+        <div class="col-3">
+            <h4 class="text-title">${Resource.msg('template.text.title','template',null)}</h4>
+            <p  class="text-content">${Resource.msg('template.text.content','template',null)}</p>
+        </div>
+    </div>
+</div>

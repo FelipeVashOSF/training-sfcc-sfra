@@ -1,0 +1,25 @@
+.template-title {
+  text-align: center;
+  background-color: white;
+  padding: 20px 0 10px 0;
+  font-weight: bold;
+}
+
+.template-subtitle {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+}
+
+.text-title {
+  text-align: start;
+  padding: 10px 0 10px 0;
+  font-weight: bold;
+}
+
+.text-content {
+  text-align: start;
+  padding: 10px 0px 10px 0px;
+}
+
+/*# sourceMappingURL=template.css.map*/

@@ -9,6 +9,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         asNavFor: '.js-second-carousel'
     });
+
     $('.js-second-carousel').slick({
         arrows: true,
         dots: true,
@@ -36,5 +37,6 @@ $(document).ready(function(){
             }
           ]
     });
+
     $('.item').css("display", "flex");
 });

@@ -1,0 +1,16 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/forms_framework/forms_framework.css');
+    </isscript>
+    <div class="col-12">
+        <h2 class="framework-title">${Resource.msg('formsframework.shipping.title','forms_framework',null)}</h2>
+        <div class="col-12">
+            <isinclude template="forms_framework/addressForm" sf-toolkit="on" />
+        </div>
+        <h2 class="framework-title">${Resource.msg('formsframework.payment.title','forms_framework',null)}</h2>
+        <div class="col-12">
+            <isinclude template="forms_framework/creditCardForm" sf-toolkit="on" />
+        </div>
+    </div>
+</isdecorate>

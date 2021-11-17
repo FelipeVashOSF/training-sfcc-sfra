@@ -1,0 +1,99 @@
+<isset name="creditFields" value="${pdict.forms.billingForm.creditCardFields}" scope="page"/>
+
+<div class="row">
+    <div class="col-12">
+        <div class="form-group required">
+            <label class="form-control-label" for="cardNumber">${Resource.msg('formsframework.payment.creditcard.cardnumber','forms_framework',null)}</label>
+            <div class="card-number-wrapper">
+                <input
+                    type="text"
+                    class="form-control cardNumber"
+                    id="cardNumber"
+                    autocomplete="cc-number"
+                    aria-describedby="false"
+                    encoding="off"
+                />
+                <div class="invalid-feedback" id="cardNumberInvalidMessage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="form-group required">
+            <label class="form-control-label" for="expirationMonth">${Resource.msg('formsframework.payment.creditcard.expirationmonth','forms_framework',null)}</label>
+            <select class="form-control expirationMonth custom-select" id="expirationMonth"
+                <isprint value="${pdict.creditcardForm.expirationMonth.attributes}" encoding="off"/> 
+                autocomplete="cc-exp-month"
+                aria-describedby="expirationMonthInvalidMessage">
+                <isloop items=${pdict.creditCardForm.expirationMonth.options} var="month">
+                    <option id="${month.id}" value="${month.htmlValue}">
+                        ${month.label}
+                    </option>
+                </isloop>
+            </select>
+            <div class="invalid-feedback" id="expirationMonthInvalidMessage"></div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="form-group">
+            <label class="form-control-label" for="expirationYear">${Resource.msg('formsframework.payment.creditcard.expirationyear','forms_framework',null)}</label>
+            <select class="form-control expirationYear custom-select" id="expirationYear">
+                <option></option>
+                <isloop items=${pdict.expirationYears} var="year">
+                    <option id="${year.toFixed(0)}" value="${year.toFixed(0)}"
+                        <isif condition="${pdict.order.billing.payment.selectedPaymentInstruments
+                            && pdict.order.billing.payment.selectedPaymentInstruments.length > 0
+                            && year == pdict.order.billing.payment.selectedPaymentInstruments[0].expirationYear}">
+                                selected
+                        </isif> >
+                    <isprint value="${year}" formatter="####" /></option>
+                </isloop>
+            </select>
+            <div class="invalid-feedback" id="expirationYearInvalidMessage"></div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label class="form-control-label" for="securityCode">${Resource.msg('formsframework.payment.creditcard.securitycode','forms_framework',null)}</label>
+            <button type="button" class="info-icon">
+                <span class="icon" aria-hidden="true">i</span>
+                <span class="sr-only">${Resource.msg('button.help.assistive.text','common',null)}</span>
+                <span class="tooltip d-none">
+                    ${Resource.msg('tooltip.security.code','creditCard',null)}
+                </span>
+            </button>
+
+            <input type="text" class="form-control securityCode" id="securityCode" encoding="off" />
+            <div class="invalid-feedback" id="securityCodeInvalidMessage"></div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group required">
+            <label class="form-control-label" for="email">${Resource.msg('formsframework.payment.creditcard.email','forms_framework',null)}</label>
+            <input type="email" class="form-control" id="email" />
+            <div class="invalid-feedback" id="securityCodeInvalidMessage"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div class="save-credit-card custom-control custom-checkbox ">
+            <input type="checkbox" class="custom-control-input" id="saveCreditCard" name="${creditFields.saveCard.htmlName}" value="true" checked>
+            <label class="custom-control-label" for="saveCreditCard">
+                <isprint value="${Resource.msg('formsframework.payment.creditcard.save','forms_framework',null)}" encoding="on" />
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- Cancel and Save Buttons -->
+<div class="row">
+    <div class="col-12">
+        <button type="submit" name="save" class="btn btn-save btn-block btn-primary">${Resource.msg('formsframework.button.save','forms_framework',null)}</button>
+    </div>
+</div>

@@ -1,4 +1,4 @@
-require("../thirdyParty/slick-1.8.1/slick/slick");
+require("slick-carousel/slick/slick.js");
 
 $(document).ready(function(){
     $('.js-first-carousel').slick({
@@ -37,6 +37,4 @@ $(document).ready(function(){
             }
           ]
     });
-    
-    $('.item').css("display", "flex");
 });

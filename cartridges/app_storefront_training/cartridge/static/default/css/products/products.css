@@ -257,6 +257,11 @@
   font-size: 40px;
 }
 
+.product {
+  max-width: 300px;
+  margin: auto;
+}
+
 .item {
   display: flex;
   align-items: center;

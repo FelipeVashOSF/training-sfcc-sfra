@@ -1,5 +1,5 @@
-@import "../thirdyParty/slick-1.8.1/slick/slick";
-@import "../thirdyParty/slick-1.8.1/slick/slick-theme";
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
 
 .slick {
     padding: 10px;
@@ -14,12 +14,18 @@
     font-size: 40px;
 }
 
+.product {
+    max-width: 300px;
+    margin: auto;
+}
+
 .item {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
 }
+
 .slick-slider {
     .slick-prev, .slick-next {
         z-index: 9;

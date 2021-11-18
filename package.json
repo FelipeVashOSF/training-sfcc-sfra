@@ -57,6 +57,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.14.6",
     "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
     "xzoom": "^1.0.14"
   }
 }

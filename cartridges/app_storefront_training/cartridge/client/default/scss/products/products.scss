@@ -1,0 +1,49 @@
+@import "slick-carousel/slick/slick.scss";
+@import "slick-carousel/slick/slick-theme.scss";
+
+.slick {
+    padding: 10px;
+}
+
+.slick-slide img {
+    margin: auto;
+    border-radius: 15px;
+}
+
+.slick-dots li button:before {
+    font-size: 40px;
+}
+
+.product {
+    max-width: 300px;
+    margin: auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.slick-slider {
+    .slick-prev, .slick-next {
+        z-index: 9;
+        &:before {
+            padding: 5px;
+            color: black;
+            font-size: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    }
+
+    .slick-prev { 
+        left: 10px;
+    }
+    
+    .slick-next {
+        right: 30px;
+    }
+
+}

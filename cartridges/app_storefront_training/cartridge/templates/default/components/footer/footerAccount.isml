@@ -1,0 +1,24 @@
+<isscript>
+    assets.addCss('/css/components/footer/footer-account.css');
+</isscript>
+<div class="col-12 footer-account">
+    <div clas="row">
+        <h1 class="footer-account-title">${Resource.msg('footer-account.title','footer-account',null)}</h1>
+    </div>
+    <div class="account-option-wrapper">
+        <ul class="account-option-list">
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-account.firstoption','footer-account',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-account.secondoption','footer-account',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-account.thirdoption','footer-account',null)}</a>
+            </li>
+            <li class="about-option">
+               <a href="">${Resource.msg('footer-account.fourthoption','footer-account',null)}</a>
+            </li>
+        </ul>
+    </div>
+</div>

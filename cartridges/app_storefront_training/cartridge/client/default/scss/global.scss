@@ -1,3 +1,8 @@
 @charset "UTF-8";
 
-@import "~base/global";
+@import "./~base/global";
+@import "./components/footer/footer-top";
+@import "./components/footer/footer-customer-service";
+@import "./components/footer/footer-about";
+@import "./components/footer/footer-account";
+@import "./components/_footer";

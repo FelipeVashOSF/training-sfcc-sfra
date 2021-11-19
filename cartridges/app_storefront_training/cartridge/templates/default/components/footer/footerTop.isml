@@ -1,0 +1,33 @@
+<isscript>
+    assets.addCss('/css/components/footer/footer-top.css');
+</isscript>
+<div class="col-12 footer-top">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="template-title">${Resource.msg('footer-top.title','footer-top',null)}</h1>
+        </div>
+        <div class="col-12">
+            <h3 class="template-subtitle">${Resource.msg('footer-top.subtitle','footer-top',null)}</h3>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="text-title">${Resource.msg('footer-top.text.title','footer-top',null)}</h4>
+                    <p class="text-content">${Resource.msg('footer-top.text.content','footer-top',null)}</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-title">${Resource.msg('footer-top.text.title','footer-top',null)}</h4>
+                    <p class="text-content">${Resource.msg('footer-top.text.content','footer-top',null)}</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-title">${Resource.msg('footer-top.text.title','footer-top',null)}</h4>
+                    <p class="text-content">${Resource.msg('footer-top.text.content','footer-top',null)}</p>
+                </div>
+                <div class="col-3">
+                    <h4 class="text-title">${Resource.msg('footer-top.text.title','footer-top',null)}</h4>
+                    <p  class="text-content">${Resource.msg('footer-top.text.content','footer-top',null)}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

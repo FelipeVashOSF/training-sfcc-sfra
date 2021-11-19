@@ -1,0 +1,32 @@
+.footer-account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00a1e0;
+    padding: 20px;
+}
+
+.footer-account-title {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.account-option-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-option-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.account-option {
+    margin-right: 10px;
+    a { 
+        color: white;
+    }
+}

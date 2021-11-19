@@ -1,0 +1,28 @@
+<footer id="footercontent">
+    <div class="footer-container">
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-top" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-payment" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-customer-service" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-training-about" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-training-account" />
+        </div>
+        <div class="footer-item row-sm-3 collapsible-xs">
+            <iscontentasset aid="footer-more-info" />
+        </div>
+    </div>
+    <div class="row copyright-wrapper">
+        <div class="col-lg-8 col-sm-7 pull-sm-5 pull-lg-4 copyright-notice" style="background-color: #00a1e0">
+            <iscontentasset aid="footer-copy" />
+        </div>
+    </div>
+</footer>
+

@@ -1,0 +1,6 @@
+<isscript>
+    assets.addCss('/css/product/categoryBadge.css');
+</isscript>
+<div class="category-badge" style="background-color:${category.custom.badgeColor}; color: ${category.custom.badgeTextColor};">
+    <isprint value="${category.custom.badgeText}" />
+</div>
